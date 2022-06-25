@@ -1,5 +1,4 @@
-# Author: Adriano Freitas
-# Email: contact@adrianofreitas.me
+# SysInfo.sh
 ## Description: Simple bash script to show system info...
 
 ## Usage
