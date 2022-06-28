@@ -13,7 +13,8 @@ CPUNO=$(cat /proc/cpuinfo | grep "model name" |wc -l)
 CPUMODEL=$(cat /proc/cpuinfo | grep "model name" |head -n1|cut -c14-)
 MEMTOTAL=$(expr $(cat /proc/meminfo |grep MemTotal|tr -d ' '|cut -d: -f2|tr -d -d kB) / 1024)
 
-FILESYS=$(df -h|egrep -v '(tmpfs|udev)')
+#FILESYS=$(df -h|egrep -v '(tmpfs|udev)')
+FILESYS=$(lsblk)
 
 
 echo "===================================="
